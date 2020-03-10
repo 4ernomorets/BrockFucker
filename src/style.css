@@ -1,0 +1,341 @@
+/* 
+display
+position
+box-sizing
+color and typography
+other
+*/
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(#e66465, #9198e5) no-repeat;
+  width: 98vw;
+  height: 98.3vh;
+}
+
+.container {
+  margin: auto;
+  background: #eeeeee;
+  width: 50%;
+  padding: 1rem 2.5rem;
+}
+.titleReg {
+  font-size: 1.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+.label {
+  font-size: 1.2rem;
+  margin-right: 1.5rem;
+}
+.label span {
+  display: inline-block;
+  width: 5rem;
+  margin-bottom: 0.65rem;
+}
+.label_terms {
+  margin-right: 1rem;
+}
+.checkTerms {
+  margin-top: 1rem;
+  margin-bottom: 0.65rem;
+}
+.checkTerms a {
+  text-decoration: underline;
+  color: #000000;
+}
+.registerBtn {
+  padding: 0.5rem 1.3rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: #e664;
+}
+.registerBtn.active {
+  background: #e66465;
+}
+.regLink {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.loginBtn {
+  padding: 0.5rem 1.3rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: #e66465;
+}
+
+.inputPsw {
+  position: absolute;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.valid {
+  border: 1px solid green;
+}
+
+label.error {
+  display: none !important;
+}
+
+.showPswIcon {
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  left: 185px;
+  top: 1.5px;
+  background-color: #000;
+  cursor: pointer;
+}
+
+#spinner {
+  display: none;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 32px;
+}
+/* main page */
+
+.container_main-page {
+  width: 80%;
+  margin-top: 3rem;
+}
+.container_main-page p {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.container_main-page p span {
+  margin-right: 36%;
+}
+.container table {
+  border-collapse: collapse;
+}
+.container table td,
+.container table th {
+  padding: 0.5rem;
+  border: 1px solid #000;
+}
+.container table th {
+  background-color: #9198e5;
+}
+.container table tr:hover {
+  background-color: #c2c2c2;
+}
+/* my profile */
+.profile-pic {
+  width: 400px;
+  height: 200px;
+  margin: 0 0 0 -80px;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.profile-pic_1 {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+.profile-pic_2 {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: #e66465;
+  visibility: visible;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+  cursor: pointer;
+}
+.profile-pic_2:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+}
+
+.container_my-profile {
+  display: flex;
+}
+
+#deleteAvatar {
+  position: absolute;
+  left: 36%;
+}
+
+#profPicForm {
+  display: none;
+}
+
+.profile-info {
+  margin-top: 1rem;
+}
+.profile-info p {
+  font-size: 1.2rem;
+}
+.profile-info button {
+  padding: 0.5rem 1.3rem;
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: #e66465;
+}
+.profile-info button:last-of-type {
+  margin-bottom: 0.5rem;
+}
+
+/* my lots */
+.profile {
+  display: flex;
+}
+
+.lot_field {
+  display: block;
+}
+
+.lot_field span {
+  width: 5rem;
+  margin-right: 5rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background: #c2c2c2;
+  padding: 3rem;
+  margin: 5% auto;
+  width: 50%;
+}
+
+.modal-content h2 {
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  margin: 15px 20px;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#createLotForm {
+  margin-left: 8rem;
+}
+
+#createLotPublish {
+  margin-top: 3rem;
+  margin-left: 8rem;
+}
+
+.btn {
+  padding: 0.5rem 1.3rem;
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: #e66465;
+}
+
+.lot_photo {
+  display: block;
+  width: 300px;
+  height: 300px;
+  background: #000000;
+  margin-top: 1.5rem;
+  margin-left: 8rem;
+  cursor: pointer;
+}
+
+#createLotPhoto {
+  display: none;
+}
+
+/* Header */
+.fixed-header {
+  width: 100%;
+  position: fixed;
+  background: #eeeeee;
+  padding: 10px 0;
+  color: #fff;
+}
+.fixed-header {
+  top: 0;
+}
+.fixed-footer {
+  bottom: 0;
+}
+.menu_container {
+  width: 100%;
+  margin: 0 auto;
+}
+nav a {
+  color: #000;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 7px 25px;
+  display: inline-block;
+}
+nav a:hover {
+  color: #aaa;
+}
+nav div {
+  margin: 0 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+}
+
+.lot-menu {
+  display: flex;
+}
+
+#currentLotForm {
+  margin-top: 2rem !important;
+}
+
+.lotPhotos {
+  margin: 1rem 0;
+}

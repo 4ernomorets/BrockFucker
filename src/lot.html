@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BrockFucker | Lot</title>
+  </head>
+  <body>
+    <div class="container container_lot-menu">
+      <div class="profile">
+        <div class="profile-pic">
+          <div class="profile-pic_1">
+            <div class="profile-pic_2" id="lotProfilePic"></div>
+          </div>
+        </div>
+
+        <div class="profile-info">
+          <p>
+            <strong><span id="profName"></span></strong>
+            <span id="lotName"></span>
+          </p>
+          <p>
+            Гарантия клуба:
+            <span id="clubGuarantee"></span>
+          </p>
+          <p>
+            Проверенное Обеспечение:
+            <span id="clubProven"> </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="lot_menu">
+        <div>
+          <form id="currentLotForm">
+            <label class="label lot_field" for="lot_date"
+              ><span>Опубликован: </span>
+              <input
+                class="inputName"
+                type="text"
+                name="lot_date"
+                placeholder="не заполнено"
+                disabled
+              />
+            </label>
+            <label class="label lot_field" for="lot_reqsum"
+              ><span>Необходимая сумма: </span>
+              <input
+                class="inputReqSum"
+                type="text"
+                name="lot_reqsum"
+                placeholder="не заполнено"
+                disabled
+              />
+            </label>
+            <label class="label lot_field" for="lot_currency"
+              ><span>Валюта: </span>
+              <input type="text" name="lot_currency" disabled />
+            </label>
+            <label class="label lot_field" for="lot_reqmonths"
+              ><span>Срок, месяцев: </span>
+              <input
+                class="inputReqMonths"
+                type="text"
+                name="lot_reqmonths"
+                placeholder="не заполнено"
+                disabled
+              />
+            </label>
+            <label class="label lot_field" for="lot_percentage"
+              ><span>Ставка, годовых: </span>
+              <input
+                class="inputReqMonths"
+                type="text"
+                name="lot_percentage"
+                placeholder="не заполнено"
+                disabled
+              />
+            </label>
+            <label class="label lot_field" for="lot_method"
+              ><span>Метод погашения: </span>
+              <input
+                class="inputReqSum"
+                type="text"
+                name="lot_method"
+                placeholder="не заполнено"
+                disabled
+              />
+            </label>
+            <label class="label lot_field" for="lot_security"
+              ><span>Обеспечение: </span>
+              <input
+                class="inputReqSum"
+                type="text"
+                name="lot_security"
+                placeholder="не заполнено"
+                disabled
+              />
+            </label>
+            <label class="label lot_field" for="lot_cred"
+              ><span>Форма кредитирования: </span>
+              <input
+                class="inputReqSum"
+                type="text"
+                name="lot_cred"
+                placeholder="не заполнено"
+                disabled
+              />
+            </label>
+            <label class="label lot_field" for="lot_reqsum"
+              ><span>Короткое описание: </span>
+              <textarea disabled name="lot_desc"> </textarea>
+            </label>
+          </form>
+          <div class="lotPhotos"></div>
+          <button class="btn" id="LotCallback">Связаться</button>
+          <button class="btn" id="LotToFav">В избранное</button>
+          <button class="btn"><a href="index.html">На главную</a></button>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/lot.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BrockFucker</title>
+  </head>
+  <body>
+    <form class="container" id="regForm">
+      <h1 class="titleReg">Регистрация</h1>
+
+      <label class="label label_email" for="email"><span>E-Mail: </span></label>
+      <input class="inputEmail" type="text" name="email" required />
+      <br />
+      <label class="label label_psw" for="psw"><span>Password: </span></label>
+      <input class="inputPsw" type="password" name="psw" id="psw" required />
+      <span class="showPswIcon"></span>
+      <br />
+      <label class="label label_psw" for="psw-repeat"
+        ><span>Password: </span></label
+      >
+      <input class="inputPsw" type="password" name="psw_repeat" required />
+      <span class="showPswIcon"></span>
+      <br />
+      <div class="checkTerms">
+        <input class="inputTerms" type="checkbox" id="terms" name="terms" />
+        <label class="label label_terms" for="terms"
+          >Ознакомлен с <a href="terms.html">правилами</a></label
+        >
+      </div>
+      <button type="submit" class="registerBtn" disabled>
+        Регистрация
+      </button>
+      <img id="spinner" src="images/spinner.gif" />
+    </form>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/registration.js"></script>
+    <script src="js/new_user.js"></script>
+  </body>
+</html>
